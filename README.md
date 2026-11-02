@@ -32,73 +32,29 @@ Contributions welcome! Open a PR to add/update entries. Keep descriptions factua
 
 ## Table of Contents
 
+- [Sector Overview & Market Dynamics](#sector-overview--market-dynamics)
 - [SaaS/Hosted Platforms](#saas-hosted-platforms)
-
 - [Open-Source GitHub Projects](#open-source-github-projects)
-
 - [How to Contribute](#how-to-contribute)
-
 - [Disclaimer](#disclaimer)
 
+## Sector Overview & Market Dynamics
 
+The global Identity and Access Management (IAM) and directory integration market is valued between $25–$30 billion and projected to surpass $60–$75 billion by the 2030s (10–15% CAGR). The market exhibits a moderately concentrated core dominated by major hyperscalers and platform giants (notably Microsoft Entra ID alongside AWS, Google, and Okta), surrounded by a fragmented perimeter of specialized vendors addressing privileged access, cross-platform endpoint management, and hybrid enterprise directory federation.
 
 ## SaaS/Hosted Platforms
 
-
-
-- **Microsoft Entra ID**
-
-  **Cloud identity and access management** with hybrid sync to on-premises Active Directory. **Pricing**: Bundled in M365 E3/E5; Premium P1/P2 add-ons **$6–$9/user/month** . **Free tier**: Limited free tier available. **Best for**: Microsoft-centric organizations wanting native AD sync and Conditional Access—**trade-off**: outside Microsoft ecosystem, integration ecosystem narrower than Okta (~3,000 vs. 7,000) .
-
-
-
-- **Okta Universal Directory**
-
-  **Vendor-neutral identity platform** with the deepest integration catalog. **Pricing**: Per-user, per-module; **$2–$15/user/month** depending on modules; costs stack across SSO, MFA, lifecycle, and governance . **Free tier**: Developer edition available. **Best for**: heterogeneous SaaS estates wanting identity independent of productivity vendor—**trade-off**: premium pricing; 2022/2023 breaches damaged trust .
-
-
-
-- **PingDirectory / Ping Identity (incl. ForgeRock)**
-
-  **Enterprise identity platform** with self-hosted and hybrid deployment options. **Pricing**: PingOne for Workforce per-user/month; larger deployments quoted . **Free tier**: None. **Best for**: regulated enterprises needing self-hosted directories, deep federation, and orchestration via DaVinci—**trade-off**: dedicated identity engineers required; ForgeRock merger created roadmap uncertainty .
-
-
-
-- **JumpCloud**
-
-  **Cloud directory platform** for identity, access, and device management. **Pricing**: Tiered per-user pricing; **free tier for up to 10 users**. **Free tier**: Yes. **Best for**: organizations without Active Directory wanting unified directory and device management—especially Mac-heavy environments .
-
-
-
-- **OneLogin**
-
-  **Cloud IAM platform** with directory integration and SSO. **Pricing**: Quote-only; tiered by users. **Free tier**: Trial available. **Best for**: mid-market organizations wanting straightforward directory and SSO.
-
-
-
-- **Google Cloud Directory Sync (GCDS)**
-
-  **Directory synchronization tool** for Google Workspace. **Pricing**: Free with Google Workspace. **Free tier**: Included with Workspace. **Best for**: Google Workspace organizations syncing from Active Directory or LDAP—**note**: sync tool, not a standalone directory.
-
-
-
-- **CyberArk Identity**
-
-  **Identity security platform** with directory integration and privileged access. **Pricing**: Quote-only. **Free tier**: None. **Best for**: enterprises prioritizing privileged access alongside directory services.
-
-
-
-- **AWS Directory Service**
-
-  **Managed Microsoft AD or LDAP** in AWS. **Pricing**: Standard and Enterprise editions; per-directory and per-hour pricing. **Free tier**: Limited trial. **Best for**: AWS-centric organizations needing managed AD or LDAP—**trade-off**: AWS ecosystem lock-in.
-
-
-
-- **Atlassian Directory**
-
-  **Identity management** within Atlassian Cloud. **Pricing**: Included with Atlassian subscriptions; Atlassian Guard for advanced. **Free tier**: Limited. **Best for**: Atlassian customers needing user provisioning and SSO—**not** a general-purpose directory.
-
-
+| Platform | Starting Price | Free Tier / Trial Limits | Company Size (Valuation / Revenue) | Best For & Key Trade-Offs |
+|---|---|---|---|---|
+| **Microsoft Entra ID** | Free (bundled core); Premium P1 at $6.00/user/month; P2 at $9.00/user/month | Free tier includes up to 50,000 directory objects (auto-increases to 300,000 objects with a verified custom domain) | ~$3.1T Market Cap (~$245B Ann. Revenue) | Native Windows/M365 AD sync, enterprise Conditional Access; narrower 3rd-party integration catalog than Okta (~3,000 vs 7,000 apps). |
+| **AWS Directory Service** | $0.05/hour (~$36/month for Simple AD / AD Connector Small); $0.24/hour total for Managed Microsoft AD Standard (2 domain controllers) | 30-day free trial with 1,500 domain controller hours total across managed directories (covers 2 DCs continuously for 30 days) | ~$2.2T Market Cap (~$105B+ AWS Ann. Revenue Run Rate) | AWS workloads requiring managed AD or LDAP connector; lock-in to AWS infrastructure ecosystem. |
+| **Google Cloud Directory Sync (GCDS)** | Free utility (paired with Google Workspace starting at $6.00/user/month or Cloud Identity Free) | 100% free tool forever; Cloud Identity Free includes 50 user licenses (Workspace offers a 14-day free trial up to 10 users) | ~$2.1T Market Cap (~$40B+ GCP Ann. Revenue Run Rate) | Google Workspace environments syncing from on-prem Active Directory/LDAP; connector utility only, not an independent directory. |
+| **Atlassian Directory (Atlassian Guard)** | Included in standard cloud; Atlassian Guard Standard starts at $4.00/user/month; Guard Premium at $8.00/user/month | 30-day free trial of Atlassian Guard (unlimited user evaluation during trial period); basic user management free with cloud products | ~$63B Market Cap (~$4.4B Ann. Revenue) | Atlassian Cloud customers needing centralized SAML SSO, SCIM provisioning; scoped exclusively to Atlassian product suite. |
+| **CyberArk Identity** | ~$2.00 to $5.00/user/month (Workforce Identity SSO/Adaptive MFA baseline, billed annually) | 14-day free trial with full evaluation access in a guided trial tenant sandbox | ~$15B Market Cap (~$1.0B Ann. Revenue) | Enterprises prioritizing high-assurance Privileged Access Management (PAM) alongside directory federation; complex deployment footprint. |
+| **Okta Universal Directory** | $6.00/user/month (Workforce Starter tier including SSO, MFA, and Universal Directory; $1,500/year contract minimum) | 30-day free trial (up to 10 active users, 5 active workflows, full platform feature access) | ~$14B Market Cap (~$2.6B Ann. Revenue) | Heterogeneous cross-vendor SaaS estates requiring deep integration library (7,000+ connectors); premium pricing structure and previous security incidents. |
+| **PingDirectory / Ping Identity** | $3.00/user/month (PingOne for Workforce Essential tier; annual enterprise contracts) | 30-day free trial of PingOne platform (sandbox up to 1,000 active evaluation identities) | ~$2.8B Acquisition Valuation by Thoma Bravo (~$350M–$500M+ Ann. Revenue) | Complex enterprise and hybrid environments requiring multi-forest federation, self-hosted directories, and DaVinci orchestration; high operational overhead. |
+| **JumpCloud** | $9.00/user/month (Device Management, annual) or $11.00/user/month (SSO, annual) | 30-day full-featured free trial with zero functional restrictions (legacy 10-user free tier grandfathered only before Feb 2024) | ~$2.6B Valuation (Series F) (~$105M–$150M ARR) | Cloud-first SMBs and heterogeneous fleets (macOS/Linux/Windows) needing unified directory and MDM; pricing scales quickly across multi-module add-ons. |
+| **OneLogin** | $2.00 to $4.00/user/month (Basic SSO starting at $2.00/user/month; Advanced plan at $4.00/user/month) | 30-day free trial with full feature evaluation (cloud directory sync, desktop/mobile SSO, MFA, no credit card required) | ~$500M Acquisition Estimate by Quest Software (~$50M+ ARR) | Mid-market enterprises wanting streamlined directory sync, smart MFA, and straightforward SSO; fewer cutting-edge governance features. |
 
 ## Open-Source GitHub Projects
 
