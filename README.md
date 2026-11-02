@@ -7,7 +7,7 @@
 <p align="center">
   <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-bluevillet?style=flat-square&logo=github" alt="Awesome"/></a>
   <a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
-  <a href="https://github.com/ishandutta2007/Awesome-Enterprise-Directory-Integration/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Enterprise-Directory-Integration?style=flat-square&color=gold" alt="GitHub Stars"/></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Enterprise-Directory-Integration/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Enterprise-Directory-Integration?style=flat-square&color=gold" alt="GitHub_Stars"/></a>
   <a href="https://github.com/ishandutta2007/Awesome-Enterprise-Directory-Integration/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Enterprise-Directory-Integration?style=flat-square&color=blue" alt="GitHub Forks"/></a>
   <a href="https://github.com/ishandutta2007/Awesome-Enterprise-Directory-Integration/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-green.svg?style=flat-square" alt="License"/></a>
   <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
@@ -64,7 +64,7 @@ The following matrix benchmarks commercial directory integration platforms, sort
 
 ## 🔓 Open-Source GitHub Projects (Ranked by Stars)
 
-Each project below is sorted in descending order by GitHub star count. Beside each project title is a badge (`style=social`, `color=white`) linking directly to that repository's stargazers page:
+Each project below is sorted in descending order by GitHub Stars_Count. Beside each project title is a badge (`style=social`, `color=white`) linking directly to that repository's stargazers page:
 
 ### 1. [Keycloak](https://github.com/keycloak/keycloak) [![Stars](https://img.shields.io/github/stars/keycloak/keycloak?style=social&color=white)](https://github.com/keycloak/keycloak/stargazers) 🔑
 * **License:** Apache-2.0 | **Language:** Java | **Architecture:** Identity Provider / Federation Gateway
